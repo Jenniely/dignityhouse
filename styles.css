@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&family=Roboto&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 180px;
+}
+
+.logo {
+  width: 100%;
+  background-color: white;
+  height: 100px;
+  line-height: 100px;
+}
+
+.logo img {
+  width: 100px;
+  display: inline-block;
+}
+.logo img:hover {
+  border: 2px solid white;
+}
+
+.name {
+  font-family: "Overpass", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.header-nav {
+  width: 100%;
+  background-color: #404040;
+}
+
+.menu {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 50px;
+}
+.menu .menu-item {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  margin-right: 3em;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.menu .menu-item a {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  color: white;
+}
+.menu .menu-item a:hover {
+  color: #D49C0B;
+}
+
+.promo {
+  width: 100%;
+  height: 700px;
+  background: url("./assets/diego-sulivan-HbJgi4GPo30-unsplash.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: -500px;
+  background-size: 145%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.promo .cta {
+  grid-row: 2;
+  grid-column: 2;
+}
+.promo .motto {
+  font-size: 1.8em;
+  font-variant: small-caps;
+  color: white;
+  text-align: right;
+  padding-right: 20px;
+}
+.promo .btn {
+  width: 160px;
+  height: 35px;
+  display: block;
+  margin: 5% auto;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.promo .btn:hover {
+  width: 165px;
+  height: 40px;
+}
+
+.about {
+  margin-top: 25px;
+}
+.about p {
+  margin: 10px 0;
+}
+
+.contact {
+  margin-top: 25px;
+}
+.contact p {
+  margin: 10px 0;
+}
+
+.copyright {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=styles.css.map */
