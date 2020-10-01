@@ -18,16 +18,36 @@
                 </div>
                 <ul class="menu">
                     <li class="menu-item"><a href="#about">Our Purpose</a></li>
-                    <li class="menu-item"><a href="#">Apply</a></li>
+                    <li class="menu-item" onclick="openForm()"><a href="#">Apply</a></li>
                     <li class="menu-item"><a href="#">Become a Sponsor</a></li>
-                    <li class="menu-item"><a href="#contact">Our Founder</a></li>
+                    <li class="menu-item"><a href="#founder">Our Founder</a></li>
                 </ul>
             </nav>
         </header>
         <div class="promo">
+            <div class="form-popup" id="myForm">
+                <form action="#" class="form-container">
+                  <h1>Apply for housing</h1>
+
+                  <p>At this time we are accepting applications for the future. Please note that this application will only get your contact information to the Foundation for further consideration.</p>
+
+                  <label for="name"><b>Applicant's name</b></label>
+                  <input type="text" placeholder="Enter Name" name="name" required>
+
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="TDCJID"><b>TDCJ-ID #</b></label>
+                  <input type="text" placeholder="Enter TDCJ-ID #" name="TDCJID" required>
+              
+                  <button type="submit" class="btn">Apply</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+              
                 <div class="cta">
                     <p class="motto">Our mission is to provide dignified housing and support for retirement-aged parolees</p>
-                <button class="btn">Apply</button>
+                <button class="btn" onclick="openForm()">Apply</button>
                 </div>
         </div>
         
@@ -43,15 +63,18 @@
                 
             <p class="chapter-text">Dignity House aims to provide clean, decent “dignified” living for older parolees who simply need a place to be – a place to spend their retirement years. We are prepared to help these men get their identification in order, bank accounts open, etc., but we are not heavily 'programmatic'.</p>
                 
-            <p class="chapter-text">hile we are a Christian organization, and we do offer some spiritual counseling and services, these are voluntary. Most of the men that come to us have spent a minimum of 20 years in prison, and are over the age of 65. We are not trying to get these men into the workforce, and we are not even trying to “reform” them. We do require that an applicant express remorse for his past crimes, and express a commitment to never returning to such activities. We also do have certain accountability requirements. 
+            <p class="chapter-text">While we are a Christian organization, and we do offer some spiritual counseling and services, these are voluntary. Most of the men that come to us have spent a minimum of 20 years in prison, and are over the age of 65. We are not trying to get these men into the workforce, and we are not even trying to “reform” them. We do require that an applicant express remorse for his past crimes, and express a commitment to never returning to such activities. We also do have certain accountability requirements. 
             </p>
         </div>
-        <div class="founder" id="about">
+        <div class="founder" id="founder">
             <h2 class="chapter-header">Our Founder</h2>
-            <p classg="chapter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-            <p class="chapter-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="chapter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+            <img src="./assets/Sep 2020.jpg" alt="Founder's photo">
+            <div class="story">
+                <p class="chapter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <p class="chapter-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="chapter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+            </div>
         </div>
         <div class="contact" id="contact">
             <h2 class="chapter-header">Contact Information</h2>
@@ -62,5 +85,15 @@
             <p class="copyright">Copyright © 2020 <a href="#">dignityhouse.foundation</a></p>
         </footer>
     </div>
+
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
 </body>
 </html>
