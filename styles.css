@@ -245,20 +245,17 @@ body {
 
 .founder {
   margin-top: 25px;
-  display: grid;
-  grid-template-columns: 35% auto;
-}
-.founder .story {
-  grid-column: 2;
 }
 .founder .story p {
   margin: 10px 0;
-  padding: 0 5%;
+}
+.founder .story .quote {
+  font-style: italic;
 }
 .founder img {
-  width: 90%;
-  margin: 4% auto 0;
-  grid-column: 1;
+  width: 35%;
+  margin: 3% 3%;
+  float: left;
 }
 
 .contact {
