@@ -18,21 +18,24 @@
                 </div>
                 <ul class="menu">
                     <li class="menu-item"><a href="#about">Our Purpose</a></li>
-                    <li class="menu-item" onclick="openForm()"><a href="#">Apply</a></li>
-                    <li class="menu-item"><a href="#">Become a Sponsor</a></li>
+                    <li class="menu-item hidden"><a href="#">Become a Sponsor</a></li>
                     <li class="menu-item"><a href="#founder">Our Founder</a></li>
+                    <li class="menu-item" onclick="openForm()"><a href="#">Apply</a></li>
                 </ul>
             </nav>
         </header>
         <div class="promo">
             <div class="form-popup" id="myForm">
                 <form action="https://formspree.io/f/xdopabvy" method="POST" class="form-container">
-                  <h1>Apply for housing</h1>
+                  <h2>Apply for housing</h2>
 
                   <p>At this time we are accepting applications for the future. Please note that this application will only get your contact information to the Foundation for further consideration.</p>
 
                   <label for="name"><b>Applicant's name</b></label>
                   <input type="text" placeholder="Enter Name" name="name" required>
+
+                  <label for="contactname"><b>Contact's name</b></label>
+                  <input type="text" placeholder="Enter Name" name="contactname">
 
                   <label for="email"><b>Email</b></label>
                   <input type="text" placeholder="Enter Email" name="email" required>
@@ -41,7 +44,7 @@
                   <input type="text" placeholder="Enter Phone Number" name="phone">
 
                   <label for="status"><b>Still confined?</b></label>
-                  <input type="checkbox" value="Confined" name="status"></br>
+                  <input type="checkbox" value="Confined" name="status">
               
                   <label for="TDCJID"><b>TDCJ-ID #</b></label>
                   <input type="text" placeholder="Enter TDCJ-ID #" name="TDCJID" required>
