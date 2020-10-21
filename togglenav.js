@@ -1,10 +1,10 @@
 const navbar = document.querySelector(".header-nav");
 const hamburger = document.querySelector(".hamburger");
 
+
 hamburger.addEventListener("click", toggleHamburger);
 
 function toggleHamburger(){
-    console.log('im trying');
     navbar.classList.toggle("showNav")
     hamburger.classList.toggle("showClose")
   };

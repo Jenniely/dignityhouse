@@ -311,8 +311,30 @@ body {
   .wrapper {
     width: 100%;
   }
+
+  .promo {
+    height: 600px;
+  }
+  .promo .motto {
+    font-size: 1.4em;
+  }
+  .promo .btn {
+    width: 100px;
+    height: 30px;
+  }
+
+  .about, .founder, .contact {
+    margin-top: 15px;
+    font-size: 0.8em;
+  }
+  .about .chapter-header, .founder .chapter-header, .contact .chapter-header {
+    font-size: 1.4em;
+  }
+  .about p, .about .story, .founder p, .founder .story, .contact p, .contact .story {
+    margin: 10px 10px;
+  }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 545px) {
   .wrapper {
     width: 100%;
   }
@@ -371,6 +393,21 @@ body {
 
   .showNav {
     transform: translateX(0);
+  }
+
+  .promo {
+    height: 500px;
+  }
+  .promo .cta {
+    width: 80%;
+  }
+  .promo .motto {
+    font-size: 1.4em;
+  }
+  .promo .btn {
+    width: 80px;
+    height: 25px;
+    font-size: 1em;
   }
 }
 
