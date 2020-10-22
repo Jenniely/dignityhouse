@@ -1,5 +1,5 @@
 # dignityhouse
 
-Responsive statis website for charity project.
+Responsive static website for charity project.
 
-Made with HTML, SCSS, JavaScript.
+Made with HTML, SCSS, JavaScript. Hosted with AWS S3.
