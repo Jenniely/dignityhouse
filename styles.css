@@ -217,13 +217,12 @@ body {
 .form-popup {
   display: none;
   position: fixed;
+  max-width: 60vw;
   top: 10vh;
-  left: 50%;
-  margin-left: -400px;
+  left: calc(50% - 30vw);
   border: 3px solid #f1f1f1;
   z-index: 9;
-  max-width: 800px;
-  max-height: 750px;
+  max-height: 85vh;
   overflow-y: scroll;
 }
 
@@ -333,6 +332,19 @@ body {
   .about p, .about .story, .founder p, .founder .story, .contact p, .contact .story {
     margin: 10px 10px;
   }
+
+  .form-container {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .form-container p {
+    margin: 5px 0;
+  }
+
+  .form-container input[type=text], .form-container input[type=checkbox] {
+    padding: 5px;
+    margin: 5px 0 10px 0;
+  }
 }
 @media only screen and (max-width: 545px) {
   .wrapper {
@@ -408,6 +420,10 @@ body {
     width: 80px;
     height: 25px;
     font-size: 1em;
+  }
+
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
   }
 }
 
